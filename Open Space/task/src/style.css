@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.space {
+    background-image: url("../Downloads/space.jpg");
+    height: 100vh;
+}
+.planet-area {
+}
+.planet {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.rocket {
+    width: 15%;
+    position: absolute;
+    left: 25%;
+    bottom: 25%;
+    transform: rotate(30deg);
+
+}
+.check-buttons{
+    display: flex;
+
+}
+.levers {
+    display: flex;
+}
+.control-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    bottom: 150px;
+    width: 320px;
+    height: 250px;
+    background:
+            linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+            linear-gradient(63deg, transparent 74%, #999 78%),
+            linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+            #444;
+    background-size: 16px 48px;
+}
+.control-panel__inner {
+    width: 300px;
+    height: 230px;
+    background-color: #4b4b4b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.check-buttons input[type="checkbox"] {
+    background-color: white;
+    padding: 10px 10px;
+    margin: 15px;
+    height: 10px;
+    width: 10px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+.levers input[type="range"] {
+    background-color: white;
+    padding: 10px 10px;
+    margin: 10px;
+    width: 10px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.launch {
+    width: 100px;
+    height: 50px;
+    border-radius: 90%;
+    background-color: darkred;
+    border-color: white;
+    color: white;
+}
+
+input[type="password"] {
+    width: 70px;
+    height: 30px;
+    border-radius: 7px;
+    border-color: yellow;
+    background-color: #4b4b4b;
+    color: grey;
+}
+
+input[type="submit"] {
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: yellow;
+}
+
+.disabled {
+
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="disabled()">
+    <div class="space">
+        <div class="planet-area">
+            <img class="planet" src="../Downloads/mars.png">
+            <img class="rocket" src="../Downloads/rocket.jpg" id="animate">
+        </div>
+    <div class="control-panel">
+        <div class="control-panel__inner">
+            <input type="password" id="psw">
+            <input type="submit" value="ok" id="ok" onclick="enabled()">
+            <div class="check-buttons">
+                <input type="checkbox" id="chexkbtn1" onchange="launchEnable()">
+                <input type="checkbox" id="chexkbtn2" onchange="launchEnable()">
+                <input type="checkbox" id="chexkbtn3" onchange="launchEnable()">
+                <input type="checkbox" id="chexkbtn4" onchange="launchEnable()">
+                <input type="checkbox" id="chexkbtn5" onchange="launchEnable()">
+                <input type="checkbox" id="chexkbtn6" onchange="launchEnable()">
+            </div>
+            <div class="levers">
+                <input type="range" id="leversbtn1" min="0" max="10" oninput="launchEnable()" onchange="launchEnable()">
+                <input type="range" id="leversbtn2" min="0" max="10" oninput="launchEnable()" onchange="launchEnable()">
+                <input type="range" id="leversbtn3" min="0" max="10" oninput="launchEnable()" onchange="launchEnable()">
+                <input type="range" id="leversbtn4" min="0" max="10" oninput="launchEnable()" onchange="launchEnable()">
+                <input type="range" id="leversbtn5" min="0" max="10" oninput="launchEnable()" onchange="launchEnable()">
+            </div>
+            <input type="button" id="launch" value="launch" onclick="startRocket()">
+        </div>
+        </div>
+    </div>
+</body>
+</html>
